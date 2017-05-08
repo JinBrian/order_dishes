@@ -1,0 +1,40 @@
+.start{
+    margin-top:150px;
+    font-size:.9em;
+}
+
+/*设置上下边距，使得页眉页脚显示出来，不被遮盖*/
+body{
+    margin:80px 0 100px 0;
+}
+
+/*start.html页面，重写.align-center类，使其适应不同的浏览器，在居中显示*/
+.align-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);/*Firefox*/
+    -ms-transform: translate(-50%,-50%);/*IE*/
+    -o-transform: translate(-50%,-50%);/*Opera*/
+    -webkit-transform: translate(-50%,-50%);/*Safari的和 Chrome*/
+
+
+text-align: center;
+}
+
+
+/*取消页脚ul的默认样式*/
+.navbar-footer-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.navbar-footer-menu li{
+    display:inline-block;
+    line-height: 50px;
+    width:30%;
+    text-align: center;
+    font-size:1.5em;
+}
